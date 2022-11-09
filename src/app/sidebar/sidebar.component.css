@@ -1,0 +1,82 @@
+.sidebar {
+  height: 100%;
+}
+
+a:nth-child(1) .card {
+  background-color: #e2fdff;
+}
+
+a:nth-child(2) .card {
+  background-color: #bfd7ff;
+}
+
+a:nth-child(3) .card {
+  background-color: #9bb1ff;
+}
+
+a:nth-child(4) .card {
+  background-color: #788bff;
+}
+
+a:nth-child(5) .card {
+  background-color: #5465ff;
+}
+
+a:nth-child(1) .card:hover {
+  background-color: #c7fbff;
+}
+
+a:nth-child(2) .card:hover {
+  background-color: #a3c5ff;
+}
+
+a:nth-child(3) .card:hover {
+  background-color: #809bff;
+}
+
+a:nth-child(4) .card:hover {
+  background-color: #6176ff;
+}
+
+a:nth-child(5) .card:hover {
+  background-color: #3347ff;
+}
+
+
+
+.card {
+  background-color: rgba(0,0,0,0);
+  border-radius: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px 0 10px;
+  height: 20%;
+}
+
+.card-img-top {
+    width: 80px;
+}
+
+.card-title {
+  font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .card h5 {
+        display: none;
+    }
+
+    .card-img-top {
+        width: 50px;
+    }
+
+  .sidebar {
+    width: 80px;
+  }
+}
