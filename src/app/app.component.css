@@ -1,3 +1,8 @@
+* {
+  font-family: 'Kanit', sans-serif;
+  color: black;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 200px repeat(1, 1fr);
@@ -15,44 +20,14 @@
 
 /* app-persoenlich, app-bildung, app-kenntnisse, app-freizeit, app-projekte */
 
-:host /deep/ router-outlet + app-persoenlich {
+:host /deep/ router-outlet + * {
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 2;
   grid-column-end: 3;
   background-color: antiquewhite;
-}
-
-:host /deep/ router-outlet + app-kenntnisse {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  background-color: antiquewhite;
-}
-
-:host /deep/ router-outlet + app-bildung {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  background-color: antiquewhite;
-}
-
-:host /deep/ router-outlet + app-freizeit {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  background-color: antiquewhite;
-}
-
-:host /deep/ router-outlet + app-projekte {
-  grid-row-start: 1;
-  grid-row-end: 2;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (max-width: 600px) {
