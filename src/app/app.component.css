@@ -13,16 +13,50 @@
   grid-column-end: 2;
 }
 
-.router-outlet {
+/* app-persoenlich, app-bildung, app-kenntnisse, app-freizeit, app-projekte */
+
+:host /deep/ router-outlet + app-persoenlich {
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 2;
   grid-column-end: 3;
-  background-color: bisque;
+  background-color: antiquewhite;
+}
+
+:host /deep/ router-outlet + app-kenntnisse {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: antiquewhite;
+}
+
+:host /deep/ router-outlet + app-bildung {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: antiquewhite;
+}
+
+:host /deep/ router-outlet + app-freizeit {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: antiquewhite;
+}
+
+:host /deep/ router-outlet + app-projekte {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: antiquewhite;
 }
 
 @media only screen and (max-width: 600px) {
   .grid-container {
-    grid-template-columns: 10% repeat(1, 1fr);
+    grid-template-columns: 80px repeat(1, 1fr);
   }
 }
